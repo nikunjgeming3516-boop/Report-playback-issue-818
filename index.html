@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#192a36"><title>MeowSMS Mini — Demo</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<header class="topbar"><div class="brand"><div class="logo">🐱</div><div><b>MeowSMS Mini</b><small>Telegram Mini App Demo</small></div></div><div class="top-actions"><div class="balance-pill">₹<span id="balance">250.00</span></div><button class="circle" id="addFunds">＋</button></div></header>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<main class="wrap">
+<section class="page active" id="home">
+<div class="hero"><span class="eyebrow">WELCOME TO MEOWSMS</span><h1>Everything in one place.</h1><p>Browse demo services, view sample orders and explore your wallet.</p><div class="hero-bottom"><span>DEMO ACCOUNT</span><span class="tag">● Demo mode</span></div></div>
+<div class="stats"><div class="stat"><span>Balance</span><b id="homeBalance">₹250.00</b></div><div class="stat"><span>Total Spent</span><b id="spent">₹120.00</b></div><div class="stat"><span>Recharged</span><b id="recharged">₹370.00</b></div></div>
+<div class="section-head"><h2>Popular services</h2><span>DEMO</span></div><input class="search" id="searchHome" placeholder="⌕ Search services...">
+<div class="service-grid" id="servicesHome"></div>
+<div class="panel"><div class="panel-head">Recent orders <button class="textbtn" data-nav="history">View all →</button></div><div id="recentOrders"></div></div>
+</section>
+<section class="page" id="numbers"><div class="section-head"><h2>Buy a number</h2><span>SIMULATED</span></div><p class="muted">Demo only: purchases are simulated and do not provide a real phone number or OTP.</p><input class="search" id="searchNumbers" placeholder="⌕ Search service or country..."><div class="service-grid" id="servicesNumbers"></div></section>
+<section class="page" id="wallet"><div class="wallet-hero"><span>AVAILABLE DEMO BALANCE</span><strong id="walletBalance">₹250.00</strong><p>Demo funds have no real monetary value.</p></div><div class="panel"><div class="panel-head">Add funds</div><div class="pad"><label>Amount (₹)</label><input class="input" id="depositAmount" type="number" min="10" max="50000" value="100"><button class="primary full" id="depositDemo">Simulate deposit request</button><small>Demo only. No real payment is taken or verified.</small></div></div><div class="panel"><div class="panel-head">Promo code</div><div class="pad inline"><input class="input" id="promo" placeholder="Try DEMO10"><button class="button" id="applyPromo">Apply</button></div></div><div class="panel"><div class="panel-head">Transactions</div><div id="transactions"></div></div></section>
+<section class="page" id="history"><div class="section-head"><h2>Order history</h2><span id="orderCount">2 DEMO</span></div><input class="search" id="searchHistory" placeholder="Search orders..."><div class="panel" id="historyList"></div></section>
+<section class="page" id="profile"><div class="panel profile"><div class="avatar">🐱</div><h2 id="profileName">Demo User</h2><p class="muted">Telegram ID: Demo only</p><div class="stats"><div class="stat"><span>VIP level</span><b>Starter</b></div><div class="stat"><span>Referral</span><b>MEOW10</b></div><div class="stat"><span>API access</span><b>Demo</b></div></div><div class="row"><span>Referral code <b>MEOW10</b></span><button class="button" id="copyReferral">Copy</button></div></div><div class="panel"><div class="panel-head">Support & information</div><button class="menu-row" id="faq">Help & FAQ <span>›</span></button><button class="menu-row" id="support">Telegram Support <span>↗</span></button><a class="menu-row" href="terms.html">Terms & Privacy <span>›</span></a></div></section>
+</main>
+<nav class="bottom-nav"><button class="nav active" data-nav="home"><span>⌂</span>Home</button><button class="nav" data-nav="numbers"><span>▣</span>Numbers</button><button class="nav" data-nav="wallet"><span>◈</span>Wallet</button><button class="nav" data-nav="history"><span>◷</span>History</button><button class="nav" data-nav="profile"><span>♙</span>Profile</button></nav>
+<script src="assets/app.js"></script>
+</body></html>
